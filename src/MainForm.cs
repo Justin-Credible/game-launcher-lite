@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Diagnostics;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -60,7 +61,6 @@ namespace GameLauncherLite
             set
             {
                 _games = value;
-                BuildGameList();
                 Render();
             }
         }
@@ -68,29 +68,6 @@ namespace GameLauncherLite
         #endregion
 
         #region Private Methods
-
-        private void BuildGameList()
-        {
-            if (_games == null)
-                _games = new List<Game>();
-
-            for (var i = 0; i < MAX_GAMES; i++)
-            {
-                var label = (Label)Controls.Find($"Game{i+1}Label", false)[0];
-
-                if (i >= _games.Count)
-                {
-                    label.Visible = false;
-                }
-                else
-                {
-                    label.Visible = true;
-
-                    var game = _games[i];
-                    label.Text = game.Name;
-                }
-            }
-        }
 
         private void Render()
         {
@@ -129,6 +106,19 @@ namespace GameLauncherLite
                 for (var i = 0; i < MAX_GAMES; i++)
                 {
                     var label = (Label)Controls.Find($"Game{i + 1}Label", false)[0];
+
+                    if (i >= _games.Count)
+                    {
+                        label.Visible = false;
+                        continue;
+                    }
+                    else
+                    {
+                        label.Visible = true;
+
+                        var game = _games[i];
+                        label.Text = game.Name;
+                    }
 
                     if (i == _selectedGameIndex)
                         label.ForeColor = Config.ItemSelectedColor;
@@ -255,7 +245,6 @@ namespace GameLauncherLite
         {
             BeginInvoke((MethodInvoker)delegate
             {
-                BuildGameList();
                 Render();
                 _waiting = false;
 
