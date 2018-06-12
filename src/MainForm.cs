@@ -133,6 +133,8 @@ namespace GameLauncherLite
             _timer.Stop();
             _waiting = true;
 
+            _selectedGameIndex = Config.Games.IndexOf(game);
+
             this.Render();
 
             var binary = game.IsMAME ? Config.MAME : game.Resource;
@@ -245,8 +247,8 @@ namespace GameLauncherLite
         {
             BeginInvoke((MethodInvoker)delegate
             {
-                Render();
                 _waiting = false;
+                Render();
 
                 if (Config.AutoStartOnIdle != null)
                     _timer.Start();
