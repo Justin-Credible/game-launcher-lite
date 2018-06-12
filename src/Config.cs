@@ -25,6 +25,17 @@ namespace GameLauncherLite
         private static Color? _footer1Color= null;
         private static Color? _footer2Color = null;
 
+        public static AutoScaleMode AutoScaleMode
+        {
+            get
+            {
+                if (String.IsNullOrEmpty(ConfigurationManager.AppSettings["AutoScaleMode"]))
+                    return AutoScaleMode.None;
+                else
+                    return (AutoScaleMode)Enum.Parse(typeof(AutoScaleMode), ConfigurationManager.AppSettings["AutoScaleMode"]);
+            }
+        }
+
         public static bool OverrideDimensions
         {
             get

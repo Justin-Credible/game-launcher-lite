@@ -19,6 +19,8 @@ namespace GameLauncherLite
 
             var form = new MainForm();
 
+            form.AutoScaleMode = Config.AutoScaleMode;
+
             if (Config.OverrideDimensions)
             {
                 form.Width = Config.Width;

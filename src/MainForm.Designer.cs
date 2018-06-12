@@ -48,21 +48,22 @@
             // 
             // TitleLabel
             // 
-            this.TitleLabel.AutoSize = true;
-            this.TitleLabel.Font = new System.Drawing.Font("Press Start K", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TitleLabel.AutoEllipsis = true;
+            this.TitleLabel.Font = new System.Drawing.Font("Press Start K", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.TitleLabel.ForeColor = System.Drawing.Color.White;
-            this.TitleLabel.Location = new System.Drawing.Point(75, 25);
+            this.TitleLabel.Location = new System.Drawing.Point(11, 27);
             this.TitleLabel.Name = "TitleLabel";
-            this.TitleLabel.Size = new System.Drawing.Size(309, 27);
+            this.TitleLabel.Size = new System.Drawing.Size(457, 46);
             this.TitleLabel.TabIndex = 0;
             this.TitleLabel.Text = "Title Label";
+            this.TitleLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Footer1Label
             // 
             this.Footer1Label.AutoEllipsis = true;
-            this.Footer1Label.Font = new System.Drawing.Font("Press Start K", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Footer1Label.Font = new System.Drawing.Font("Press Start K", 21F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.Footer1Label.ForeColor = System.Drawing.Color.White;
-            this.Footer1Label.Location = new System.Drawing.Point(12, 563);
+            this.Footer1Label.Location = new System.Drawing.Point(12, 565);
             this.Footer1Label.Name = "Footer1Label";
             this.Footer1Label.Size = new System.Drawing.Size(456, 29);
             this.Footer1Label.TabIndex = 1;
@@ -72,9 +73,9 @@
             // Footer2Label
             // 
             this.Footer2Label.AutoEllipsis = true;
-            this.Footer2Label.Font = new System.Drawing.Font("Press Start K", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Footer2Label.Font = new System.Drawing.Font("Press Start K", 21F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.Footer2Label.ForeColor = System.Drawing.Color.White;
-            this.Footer2Label.Location = new System.Drawing.Point(12, 602);
+            this.Footer2Label.Location = new System.Drawing.Point(12, 594);
             this.Footer2Label.Name = "Footer2Label";
             this.Footer2Label.Size = new System.Drawing.Size(456, 37);
             this.Footer2Label.TabIndex = 2;
@@ -84,7 +85,7 @@
             // Game1Label
             // 
             this.Game1Label.AutoEllipsis = true;
-            this.Game1Label.Font = new System.Drawing.Font("Press Start K", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Game1Label.Font = new System.Drawing.Font("Press Start K", 21F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.Game1Label.ForeColor = System.Drawing.Color.White;
             this.Game1Label.Location = new System.Drawing.Point(12, 104);
             this.Game1Label.Name = "Game1Label";
@@ -96,7 +97,7 @@
             // Game2Label
             // 
             this.Game2Label.AutoEllipsis = true;
-            this.Game2Label.Font = new System.Drawing.Font("Press Start K", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Game2Label.Font = new System.Drawing.Font("Press Start K", 21F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.Game2Label.ForeColor = System.Drawing.Color.White;
             this.Game2Label.Location = new System.Drawing.Point(12, 140);
             this.Game2Label.Name = "Game2Label";
@@ -108,7 +109,7 @@
             // Game3Label
             // 
             this.Game3Label.AutoEllipsis = true;
-            this.Game3Label.Font = new System.Drawing.Font("Press Start K", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Game3Label.Font = new System.Drawing.Font("Press Start K", 21F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.Game3Label.ForeColor = System.Drawing.Color.White;
             this.Game3Label.Location = new System.Drawing.Point(12, 176);
             this.Game3Label.Name = "Game3Label";
@@ -120,7 +121,7 @@
             // Game4Label
             // 
             this.Game4Label.AutoEllipsis = true;
-            this.Game4Label.Font = new System.Drawing.Font("Press Start K", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Game4Label.Font = new System.Drawing.Font("Press Start K", 21F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.Game4Label.ForeColor = System.Drawing.Color.White;
             this.Game4Label.Location = new System.Drawing.Point(12, 212);
             this.Game4Label.Name = "Game4Label";
@@ -132,7 +133,7 @@
             // Game8Label
             // 
             this.Game8Label.AutoEllipsis = true;
-            this.Game8Label.Font = new System.Drawing.Font("Press Start K", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Game8Label.Font = new System.Drawing.Font("Press Start K", 21F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.Game8Label.ForeColor = System.Drawing.Color.White;
             this.Game8Label.Location = new System.Drawing.Point(12, 356);
             this.Game8Label.Name = "Game8Label";
@@ -144,7 +145,7 @@
             // Game7Label
             // 
             this.Game7Label.AutoEllipsis = true;
-            this.Game7Label.Font = new System.Drawing.Font("Press Start K", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Game7Label.Font = new System.Drawing.Font("Press Start K", 21F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.Game7Label.ForeColor = System.Drawing.Color.White;
             this.Game7Label.Location = new System.Drawing.Point(12, 320);
             this.Game7Label.Name = "Game7Label";
@@ -156,7 +157,7 @@
             // Game6Label
             // 
             this.Game6Label.AutoEllipsis = true;
-            this.Game6Label.Font = new System.Drawing.Font("Press Start K", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Game6Label.Font = new System.Drawing.Font("Press Start K", 21F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.Game6Label.ForeColor = System.Drawing.Color.White;
             this.Game6Label.Location = new System.Drawing.Point(12, 284);
             this.Game6Label.Name = "Game6Label";
@@ -168,7 +169,7 @@
             // Game5Label
             // 
             this.Game5Label.AutoEllipsis = true;
-            this.Game5Label.Font = new System.Drawing.Font("Press Start K", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Game5Label.Font = new System.Drawing.Font("Press Start K", 21F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.Game5Label.ForeColor = System.Drawing.Color.White;
             this.Game5Label.Location = new System.Drawing.Point(12, 248);
             this.Game5Label.Name = "Game5Label";
@@ -180,7 +181,7 @@
             // Game12Label
             // 
             this.Game12Label.AutoEllipsis = true;
-            this.Game12Label.Font = new System.Drawing.Font("Press Start K", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Game12Label.Font = new System.Drawing.Font("Press Start K", 21F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.Game12Label.ForeColor = System.Drawing.Color.White;
             this.Game12Label.Location = new System.Drawing.Point(12, 500);
             this.Game12Label.Name = "Game12Label";
@@ -192,7 +193,7 @@
             // Game11Label
             // 
             this.Game11Label.AutoEllipsis = true;
-            this.Game11Label.Font = new System.Drawing.Font("Press Start K", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Game11Label.Font = new System.Drawing.Font("Press Start K", 21F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.Game11Label.ForeColor = System.Drawing.Color.White;
             this.Game11Label.Location = new System.Drawing.Point(12, 464);
             this.Game11Label.Name = "Game11Label";
@@ -204,7 +205,7 @@
             // Game10Label
             // 
             this.Game10Label.AutoEllipsis = true;
-            this.Game10Label.Font = new System.Drawing.Font("Press Start K", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Game10Label.Font = new System.Drawing.Font("Press Start K", 21F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.Game10Label.ForeColor = System.Drawing.Color.White;
             this.Game10Label.Location = new System.Drawing.Point(12, 428);
             this.Game10Label.Name = "Game10Label";
@@ -216,7 +217,7 @@
             // Game9Label
             // 
             this.Game9Label.AutoEllipsis = true;
-            this.Game9Label.Font = new System.Drawing.Font("Press Start K", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Game9Label.Font = new System.Drawing.Font("Press Start K", 21F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.Game9Label.ForeColor = System.Drawing.Color.White;
             this.Game9Label.Location = new System.Drawing.Point(12, 392);
             this.Game9Label.Name = "Game9Label";
@@ -227,8 +228,7 @@
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(192F, 192F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(480, 640);
             this.Controls.Add(this.Game12Label);
@@ -254,7 +254,6 @@
             this.Shown += new System.EventHandler(this.MainForm_Shown);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.MainForm_KeyDown);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
