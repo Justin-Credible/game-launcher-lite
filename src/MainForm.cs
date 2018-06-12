@@ -151,9 +151,18 @@ namespace GameLauncherLite
             if (game.IsMAME && !String.IsNullOrEmpty(Config.MAME_Arguments))
                 arguments += " " + Config.MAME_Arguments;
 
+            var workingDirectory = Path.GetDirectoryName(binary);
+
+            var processStartInfo = new ProcessStartInfo()
+            {
+                FileName = binary,
+                Arguments = arguments,
+                WorkingDirectory = workingDirectory,
+            };
+
             var process = new Process
             {
-                StartInfo = new ProcessStartInfo(binary, arguments),
+                StartInfo = processStartInfo,
             };
 
             process.EnableRaisingEvents = true;
