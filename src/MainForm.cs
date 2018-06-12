@@ -150,6 +150,7 @@ namespace GameLauncherLite
                 FileName = binary,
                 Arguments = arguments,
                 WorkingDirectory = workingDirectory,
+                WindowStyle = ProcessWindowStyle.Hidden,
             };
 
             var process = new Process
