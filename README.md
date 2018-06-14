@@ -28,7 +28,7 @@ Open the solution file `src/GameLauncherLite.sln` with Visual Studio 2017 commun
 To use in place of the default `explorer.exe` (Windows desktop) shell, edit or create the following registry key (type REG_SZ):
 
 ```
-HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\Shell
+HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\Shell
 ```
 
 and set it to the path of the built `GameLauncherLite.exe` binary and re-login.
